@@ -1,0 +1,31 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Conexión H2 embebida -->
+        <property name="hibernate.connection.driver_class">org.h2.Driver</property>
+        <property name="hibernate.connection.url">jdbc:h2:file:./construccion/data/gameDB;DB_CLOSE_ON_EXIT=FALSE</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.connection.password"></property>
+
+        <!-- Dialecto H2 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
+
+        <!-- Crear/actualizar tablas automáticamente -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Mostrar SQL en consola (útil para debug) -->
+        <property name="hibernate.show_sql">true</property>
+
+        <!-- Quitar comentarios del Hibernate -->
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">false</property>
+
+        <!-- Lista de clases anotadas (@Entity) -->
+        <mapping class="es.upm.etsisi.fis.model.User"/>
+        <mapping class="es.upm.etsisi.fis.model.Puntuacion"/>
+        <mapping class="es.upm.etsisi.fis.model.Movimiento"/>
+        <!-- Añade aquí el resto de entidades -->
+    </session-factory>
+</hibernate-configuration>
