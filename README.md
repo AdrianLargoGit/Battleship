@@ -11,7 +11,26 @@ This project is developed as part of the **Software Engineering Fundamentals (FI
 - **Accessibility:** Compatible with mobile devices, tablets, and PCs, with multiple visual modes.
 - **Security:** Complies with LOPD-GDD regulations for data protection.
 
-## Installation & Execution
-1. Clone this repository:  
-   ```sh
-   git clone https://github.com/your-repo/battleship-upm.git
+## ⚠️ JDK Recommendation
+If any errors occur, we recommend using **JDK 17**.
+
+## 📦 Cloning the Repository
+The system contains three pre-registered users, each with one game won:
+
+### 👤 alvaro@alumnos.upm.es
+- Not an administrator  
+- Regular user with a history of one game won (**26 points**)
+
+### 👤 adrian@alumnos.upm.es
+- Not an administrator  
+- Regular user with a history of one game won (**58 points**)
+
+### 👑 admin@upm.es
+- **Administrator**  
+- History of one game won (**26 points**)  
+- Has full access to all features, including viewing the scores of all users
+
+You can use these users for quick tests or demos.
+
+> **IMPORTANT:** If you download the repository as a `.zip` file, the database will be empty.
+
